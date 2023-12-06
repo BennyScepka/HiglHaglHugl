@@ -83,7 +83,7 @@ a:active,
 
 
 
-{color: #ffcc33;}
+{color: #ff2b8e;}
 /*=============================================
 			Theme Background Color
 =============================================*/
@@ -137,7 +137,7 @@ a:active,
 
 
 
-{background:#ffcc33;}
+{background:#5efaff;}
 /*=============================================
 			Theme Border Color
 =============================================*/
@@ -158,8 +158,8 @@ a:active,
 .tg-testimonial-slider .tg-themebtnnext,
 .tg-testimonial-slider .tg-themebtnprev,
 .mCSB_scrollTools .mCSB_buttonUp:hover,
-.mCSB_scrollTools .mCSB_buttonDown:hover{border-color: #ffcc33;}
+.mCSB_scrollTools .mCSB_buttonDown:hover{border-color: #ff2b8e;}
 /*=============================================
 			Stroke Color
 =============================================*/
-.tg-btn rect {stroke: #ffcc33;}
+.tg-btn rect {stroke: #5efaff;}
