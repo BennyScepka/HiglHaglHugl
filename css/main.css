@@ -1378,7 +1378,7 @@ address { font-style: italic; }
 	float:left;
 	padding:0;
 	text-transform:uppercase;
-	font:16px/16px'Oswald', Arial, Helvetica, sans-serif;
+	font:25px/25px'Oswald', Arial, Helvetica, sans-serif;
 }
 .tg-navigation .tg-colhalf{
 	position:relative;
@@ -2456,6 +2456,9 @@ address { font-style: italic; }
 	width:100%;
 	float:left;
 	color:#fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .tg-footercol .tg-posttitle h3{
 	color:#fff;
@@ -2552,11 +2555,26 @@ address { font-style: italic; }
 	width:82px;
 	height:13px;
 }
-.tg-footercol .tg-logo{
-	width:auto;
-	height:auto;
-	float:left;
-	margin:0 0 30px;
+.flex-container {
+    display: flex;
+    align-items: stretch; /* Makes the children of the container the same height */
+}
+.logo {
+    order: -1; /* This will make the logo appear first */
+}
+.logo-footer {
+    width: 100%; /* Adjust this value as needed */
+    height: auto;
+    order: -1; /* This will make the logo appear first */
+}
+.tg-footercol {
+    display: flex; /* Makes this a flex container */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: space-between; /* Distributes space evenly between children */
+}
+.tg-footercol .tg-description,
+.tg-footercol .tg-contactinfo {
+    order: 1; /* This will make the text appear after the logo */
 }
 .tg-contactinfo{
 	width:100%;
