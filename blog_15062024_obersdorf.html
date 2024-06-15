@@ -28,165 +28,126 @@
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script>
+        // JavaScript Funktion zur Passwortüberprüfung
+        function verifyPassword(event) {
+            event.preventDefault(); // Verhindert das Standardverhalten des Links
+
+            // Standardpasswort
+            var correctPassword = "12345678!";
+
+            // Passwortabfrage
+            var userPassword = prompt("Bitte geben Sie das Passwort ein, um die Fotos zu sehen:");
+
+            // Überprüfen des eingegebenen Passworts
+            if (userPassword === correctPassword) {
+                // Wenn das Passwort korrekt ist, weiterleiten
+                window.open(event.currentTarget.href, '_blank');
+            } else {
+                // Wenn das Passwort falsch ist, Fehlermeldung anzeigen
+                alert("Falsches Passwort. Zugriff verweigert.");
+            }
+        }
+    </script>
 </head>
 <body>
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-		<!--************************************
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+        <!--************************************
+				Mobile Menu Start
+		*************************************-->
+		<div id="tg-navigationm-mobile" class="tg-navigationm-mobile tg-navigation collapse navbar-collapse">
+			<span id="tg-close" class="tg-close fa fa-close"></span>
+			<div class="tg-colhalf">
+				<ul>
+					<li class="menu-item-has-children">
+						<a href="#">Verein</a>
+						<ul class="tg-dropdown-menu">
+							<li><a href="aboutus.html">Über uns</a></li>
+							<li><a href="playergrid-v1.html">Spieler</a></li>
+							<li><a href="playergrid-v2.html">Funktionäre</a></li>
+						</ul>
+					</li>
+					<li><a href="liederliste.html">Liederliste</a></li>
+				</ul>
+			</div>
+			<div class="tg-colhalf">
+				<ul>
+					<li class="menu-item-has-children">
+						<a href="bloggrid.html">Events und Blog</a>
+						<ul class="tg-dropdown-menu">
+							<li><a href="https://postimg.cc/gallery/hnBQN0FP" onclick="verifyPassword(event)">Fotos</a></li>
+						</ul>
+					</li>
+					<li><a href="contactus.html">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+		
+        <!--************************************
 				Mobile Menu End
 		*************************************-->
-		<!--************************************
+        <!--************************************
 				Header Start
 		*************************************-->
-		<header id="tg-header" class="tg-header tg-haslayout">
-			<div class="container">
-				<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-					<div class="row">
-						<div class="tg-topbar tg-haslayout">
-							<nav id="tg-topaddnav" class="tg-topaddnav">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-addnavigationm-mobile">
-										<i class="fa fa-arrow-right"></i>
-									</button>
-								</div>
-								<div id="tg-addnavigationm-mobile" class="tg-addnavigationm-mobile collapse navbar-collapse">
-									<div class="tg-colhalf pull-right">
-										<!-- <nav class="tg-addnav">
-											<ul>
-												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-login">login</a></li>
-												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-register">Register</a></li>
-												<li>
-													<div class="tg-cart">
-														<a href="javascript:void(0)" class="dropdown-toggle" id="tg-cartdropdown" data-toggle="dropdown">
-															<i class="fa fa-shopping-cart"></i>
-														</a>
-														<div class="tg-cartcontent dropdown-menu" aria-labelledby="tg-cartdropdown">
-															<ul>
-																<li>
-																	<figure>
-																		<a href="#">
-																			<img src="images/thumbnails/img-01.jpg" alt="image description">
-																		</a>
-																	</figure>
-																	<div class="tg-product-detail">
-																		<h3><a href="#">Smooth 3-Stripes Scarf</a></h3>
-																		<span class="tg-price">Price: $23</span>
-																		<a class="tg-delete" href="#"></a>
-																	</div>
-																</li>
-																<li>
-																	<figure>
-																		<a href="#">
-																			<img src="images/thumbnails/img-02.jpg" alt="image description">
-																		</a>
-																	</figure>
-																	<div class="tg-product-detail">
-																		<h3><a href="#">Smooth 3-Stripes Scarf</a></h3>
-																		<span class="tg-price">Price: $23</span>
-																		<a class="tg-delete" href="#"></a>
-																	</div>
-																</li>
-																<li>
-																	<figure>
-																		<a href="#">
-																			<img src="images/thumbnails/img-03.jpg" alt="image description">
-																		</a>
-																	</figure>
-																	<div class="tg-product-detail">
-																		<h3><a href="#">Smooth 3-Stripes Scarf</a></h3>
-																		<span class="tg-price">Price: $23</span>
-																		<a class="tg-delete" href="#"></a>
-																	</div>
-																</li>
-																<li>
-																	<div class="tg-btnbox">
-																		<strong class="tg-carttotal">Total: $134</strong>
-																		<a class="tg-btn" href="#"><span>checkout</span></a>
-																	</div>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</li>
-												<li>
-													<a id="tg-btn-search" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-												</li>
-											</ul>
-										</nav> -->
-									</div>
-									<!-- <div class="tg-colhalf">
-										<ul class="tg-socialicons">
-											<li>
-												<a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-linkedin"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-google-plus"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-dribbble"></i>
-												</a>
-											</li> 
-										</ul>
-									</div> -->
-								</div>
-							</nav>
-						</div>
-						<nav id="tg-nav" class="tg-nav brand-center">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigationm-mobile">
-									<i class="fa fa-bars"></i>
-								</button>
-								<strong class="tg-logo">
-									<a href="index.html"><img src="images/logohugl.png" alt="image description"></a>
-								</strong>
-							</div>
-							<div id="tg-navigation" class="tg-navigation">
-								<div class="tg-colhalf">
+        <header id="tg-header" class="tg-header tg-haslayout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                        <div class="tg-topbar tg-haslayout">
+                            <nav id="tg-topaddnav" class="tg-topaddnav">
+                                <!-- <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-addnavigationm-mobile">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </div> -->
+                                <div id="tg-addnavigationm-mobile" class="tg-addnavigationm-mobile collapse navbar-collapse">
+                                    <!-- Navigationsleiste oben -->
+                                </div>
+                            </nav>
+                        </div>
+                        <nav id="tg-nav" class="tg-nav brand-center">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigationm-mobile">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <strong class="tg-logo">
+                                    <a href="index.html"><img src="images/logohugl.png" alt="image description"></a>
+                                </strong>
+                            </div>
+                            <div id="tg-navigation" class="tg-navigation collapse navbar-collapse">
+                                <div class="tg-colhalf">
                                     <ul>
                                         <li>
                                             <a href="#">Verein</a>
                                             <ul class="tg-dropdown-menu">
-												<li><a href="aboutus.html">Über uns</a></li>
+                                                <li><a href="aboutus.html">Über uns</a></li>
                                                 <li><a href="playergrid-v1.html">Spieler</a></li>
                                                 <li><a href="playergrid-v2.html">Funktionäre</a></li>
                                             </ul>
                                         </li>
-										<li><a href="liederliste.html">Liederliste</a></li>
+                                        <li><a href="liederliste.html">Liederliste</a></li>
                                     </ul>
                                 </div>
                                 <div class="tg-colhalf">
                                     <ul>
                                         <li><a href="bloggrid.html">Events und Blog</a>
-										<ul class="tg-dropdown-menu">
-												<li><a href="https://postimg.cc/gallery/hnBQN0FP" target="_blank">Fotos</a></li>
-											</ul>
-										</li>
+                                            <ul class="tg-dropdown-menu">
+                                                <li><a href="https://postimg.cc/gallery/hnBQN0FP" onclick="verifyPassword(event)">Fotos</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="contactus.html">Kontakt</a></li>
                                     </ul>
                                 </div>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!--************************************
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--************************************
 				Header End
 		*************************************-->
 		<!--************************************
