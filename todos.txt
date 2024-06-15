@@ -1,0 +1,24 @@
+VEREIN: 
+ - ABOUTUS: Beschreibung Mani und Thomas
+ - SPIELER: Bilder + Beschreibungen
+ - FUNKTIONÄRE: Bilder + Beschreibungen 
+
+
+INDEX: 
+- Done (mostly)
+
+Event und Blog: 
+- Komplett open
+
+KONTAKT: 
+- Mail formular check
+
+LIEDER: 
+- Done
+
+FOTOS: 
+- Input Code als Passwort: 12345678!
+
+OPTIMIZE FOR MOBILE! 
+
+RENAME pages
