@@ -95,6 +95,28 @@ iframe {
 .bold {
 	font-weight: bold;
 }
+/* Style for the image container (frame) */
+.tg-postimg {
+    width: 100%; /* Ensure the frame uses the full width available in its parent container */
+    max-width: 300px; /* Optional: Set a maximum width to control the size */
+    height: 400px; /* Fixed height for the frame */
+    overflow: hidden; /* Hide parts of the image that don't fit within the frame */
+    margin: 0 auto 20px; /* Center the frame horizontally and add some margin at the bottom */
+    border-radius: 10px; /* Optional: Add rounded corners to the frame */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add a subtle shadow for a raised effect */
+    position: relative; /* Allows positioning of inner elements */
+}
+
+/* Style for the images inside the container */
+.tg-postimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container, might crop parts of the image */
+    position: absolute; /* Positions the image absolutely within the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the image within the container */
+}
 
 .wrap-image {
     width: 100%; /* Ensures the image fills the width of its container */
