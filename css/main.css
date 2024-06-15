@@ -91,6 +91,122 @@ iframe {
 	float: left;
 	width: 100%;
 }
+
+.bold {
+	font-weight: bold;
+}
+
+.wrap-image {
+    width: 100%; /* Ensures the image fills the width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 250px; /* Maximum height to keep images consistent */
+    object-fit: contain; /* Scales the image to fit within the container while maintaining aspect ratio */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    border-radius: 5px; /* Optional: adds a slight rounding to the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for better visual separation */
+}
+
+.tg-contentbox {
+    text-align: center; /* Centers the text and image within the container */
+    max-width: 100%; /* Adjusts to the width of the parent container */
+    margin-bottom: 20px; /* Adds some space between the content boxes */
+    padding: 10px; /* Adds padding around the content box */
+}
+/* Justifies the text for a clean block format */
+.tg-description p {
+    text-align: justify; /* Aligns text to be justified */
+    margin: 0 auto; /* Centers text block */
+    max-width: 90%; /* Optional: limits text width to make it easier to read */
+}
+
+#center-heading {
+    text-align: center;
+    margin-top: 20px; /* Optional für zusätzlichen Abstand */
+    margin-bottom: 20px; /* Optional für zusätzlichen Abstand */
+}
+
+
+
+/* Zusätzliche Stile, um sicherzustellen, dass der gesamte Inhalt gleichmäßig verteilt wird */
+.tg-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/* Allgemeine Stile für die Posts */
+.tg-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Gleiche Höhe für die Artikel */
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Abstand unterhalb der Beschreibung */
+.tg-description {
+    margin-bottom: 20px; /* Abstand zum Button */
+    flex-grow: 1;
+}
+
+/* Linksbündige Buttons */
+.left-aligned-btn {
+    align-self: flex-start; /* Links ausrichten */
+    margin-top: auto; /* Sorgt dafür, dass der Button am unteren Rand bleibt */
+}
+
+/* Anpassungen für die Buttons */
+.tg-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63; /* Hintergrundfarbe anpassen */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px; /* Abstand zum oberen Element */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .equal-height {
+        height: auto; /* Höhe auf automatische Anpassung zurücksetzen */
+    }
+}
+
+/* Linksbündige Buttons */
+.left-aligned-btn {
+    display: inline-block; /* Standard für Links, um Textumfluss zu verhindern */
+    margin-top: 10px; /* Abstand zum oberen Element */
+    text-align: left; /* Linksbündig ausrichten */
+    padding: 10px 20px; /* Abstand innerhalb des Buttons */
+    background-color: #e91e63; /* Hintergrundfarbe */
+    color: #fff; /* Textfarbe */
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung */
+    border-radius: 4px; /* Abgerundete Ecken */
+}
+
+/* Zusätzliche Stile, um sicherzustellen, dass der gesamte Inhalt gleichmäßig verteilt wird */
+.tg-contentbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Abstand unterhalb der Beschreibung */
+.tg-description {
+    margin-bottom: 20px; /* Abstand zum Button */
+    flex-grow: 1;
+}
+
 .wp-caption,
 .wp-caption-text,
 .gallery-caption,

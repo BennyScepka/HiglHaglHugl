@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $type = strip_tags(trim($_POST["contact"]["type"]));
     $message = strip_tags(trim($_POST["contact"]["message"]));
 
-    // Check the data
-    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    // Validate sanitized input
+    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Set a 400 (bad request) response code and exit.
         http_response_code(400);
         echo "Please complete the form and try again.";
@@ -26,8 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Type of Inquiry: $type\n\n";
     $email_content .= "Message:\n$message\n";
 
-    // Build the email headers
-    $email_headers = "From: $name <$email>";
+    // Securely build the email headers to prevent header injection
+    $email_headers = "From: " . filter_var($name, FILTER_SANITIZE_EMAIL) . " <no-reply@yourdomain.com>\r\n";
+    $email_headers .= "Reply-To: $email";
+
+    // Use a more secure mail sending library or function if available
+    // For example, using PHPMailer (not shown here due to complexity)
 
     // Send the email
     if (mail($recipient, $subject, $email_content, $email_headers)) {
