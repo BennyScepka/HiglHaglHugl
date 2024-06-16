@@ -58,6 +58,7 @@
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
+	
 	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
 	<!--************************************
 				Mobile Menu Start
@@ -181,6 +182,18 @@
 		<!--************************************
 				Main Start
 		*************************************-->
+		<div id="ageVerificationModal" class="modal">
+			<div class="modal-content">
+				<h2>Bist du schon 18?</h2>
+				<p>Manche Texte können kontroverse Zeilen beinhalten<br> Bitte gib dein Geburtsdatum ein:</p>
+				<form id="ageVerificationForm">
+					<input type="date" id="birthdate" required>
+					<button type="submit">Abschicken</button>
+				</form>
+				<p id="ageVerificationMessage" class="message"></p>
+			</div>
+			
+		</div>
 		<main id="tg-main" class="tg-main tg-haslayout">
 			<!--************************************
 					Lieder Start
@@ -633,6 +646,7 @@
 	<!--************************************
 			Wrapper End
 	*************************************-->
+	<script src="js/ageverification.js"></script>
 	<script src="js/vendor/jquery-library.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/customScrollbar.min.js"></script>
