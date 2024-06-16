@@ -51,6 +51,50 @@
     </script>
 </head>
 <body>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const form = document.getElementById('contact-form');
+			form.addEventListener('submit', function(event) {
+				event.preventDefault(); // Prevent the default form submission
+	
+				// Gather form data
+				const formData = new FormData(form);
+				const formObject = Object.fromEntries(formData.entries());
+	
+				// Send the form data using Fetch API
+				fetch(form.action, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Accept': 'application/json',
+					},
+					body: JSON.stringify(formObject),
+				})
+				.then(response => {
+					if (response.ok) {
+						// Display success message
+						form.reset();
+						displayMessage('Thank you for your message! We will get back to you soon.', 'success');
+					} else {
+						// Display error message
+						displayMessage('Oops! There was a problem submitting your form. Please try again later.', 'error');
+					}
+				})
+				.catch(error => {
+					// Display error message for network errors
+					displayMessage('There was an error: ' + error.message, 'error');
+				});
+			});
+	
+			// Function to display feedback messages to the user
+			function displayMessage(message, type) {
+				const messageDiv = document.getElementById('form-response');
+				messageDiv.innerText = message;
+				messageDiv.className = type; // Apply success or error class
+			}
+		});
+	</script>
+
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -218,15 +262,15 @@
 											</ul>
 										</div>
 									</div>
-									<!-- set action below to: action="contactus.php", php script has to be created -->
+									
 									<div class="col-md-7 col-sm-12 col-xs-12">
-										<form action="contactus.php" method="post" class="tg-commentform help-form" id="tg-commentform">  
+										<form id="contact-form" action="https://formspree.io/f/moqggyor" method="POST" class="tg-commentform help-form"> 
 											<fieldset>
 												<div class="form-group">
 													<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
 												</div>
 												<div class="form-group">
-													<input type="email" required="" placeholder="Email*" class="form-control" name="contact[email]" oninput="this.value = this.value.toLowerCase()">
+													<input type="email" required="" placeholder="Email*" class="form-control" name="email" oninput="this.value = this.value.toLowerCase()">
 												</div>
 												<div class="form-group">
 													<div class="tg-select">
@@ -245,6 +289,7 @@
 													<button type="submit" class="tg-btn submit-now">Senden</button>
 												</div>
 											</fieldset>
+											<div id="form-response" class="tg-form-response"></div>
 										</form>
 									</div>
 									<div id="tg-officeaddressslider" class="tg-officeaddressslider tg-officeaddressnav owl-carousel">

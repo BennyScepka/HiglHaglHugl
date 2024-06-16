@@ -165,6 +165,25 @@ iframe {
     opacity: 0.60;
 } */
 /* Ensure .tg-theme-tag is fixed at the top of the container */
+.tg-form-response {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.tg-form-response.success {
+    color: #4CAF50;
+    background-color: #DFF2BF;
+    display: block;
+}
+
+.tg-form-response.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    display: block;
+}
+
 .tg-playerimg figcaption .tg-theme-tag {
     position: absolute; /* Positioning the tag absolutely */
     top: 0; /* Fixing it at the top */
