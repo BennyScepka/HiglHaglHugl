@@ -2799,7 +2799,24 @@ address { font-style: italic; }
 /*=============================================
 			Footer Style
 =============================================*/
-.tg-footer{ background:#373542;}
+
+
+.tg-footer{ 
+	background:#373542;
+
+}
+.tg-footer h1{ 
+	color: white;
+}
+
+.tg-footer h2{ 
+	color: #ff2b8e;
+}
+
+.tg-footer h3{ 
+	color: #58e5e9;
+}
+
 .tg-footerinfobox{position:relative;}
 .tg-footerinfobox .tg-bgboxone{
 	width:61.8%;
@@ -2808,7 +2825,7 @@ address { font-style: italic; }
 .tg-footerinfobox .tg-bgboxone:before{ display:none;}
 .tg-footerinfobox .tg-bgboxtwo{
 	width:38.2%;
-	background:url(../images/bg-footer.jpg);
+	background:url(../images/hugltraktor.jpg);
 	background-size:cover;
 }
 .tg-footerinfobox .tg-bgboxtwo:after{
@@ -2835,6 +2852,7 @@ address { font-style: italic; }
 	flex-direction: column;
 	justify-content: space-between;
 }
+
 .tg-footercol .tg-posttitle h3{
 	color:#fff;
 	font-size:18px;
