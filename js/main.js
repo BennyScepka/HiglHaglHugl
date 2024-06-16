@@ -9,34 +9,34 @@ $(document).ready(function() {
 	/* ---------------------------------------
 	 Ajax Code for Contact Form
 	 --------------------------------------- */
-	jQuery(document).on('click', '.submit-now', function (e) {
-		e.preventDefault();
-		var _this = jQuery(this);
-		jQuery('body').append(loader_html);
-		var serialize_data = _this.parents('.help-form').serialize();
-		var dataString = serialize_data;
+	// jQuery(document).on('click', '.submit-now', function (e) {
+	// 	e.preventDefault();
+	// 	var _this = jQuery(this);
+	// 	jQuery('body').append(loader_html);
+	// 	var serialize_data = _this.parents('.help-form').serialize();
+	// 	var dataString = serialize_data;
 		
-		var path = document.location
-		var loc = window.location;
-		var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/'));
-		var dir = loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+	// 	var path = document.location
+	// 	var loc = window.location;
+	// 	var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/'));
+	// 	var dir = loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 		
-		jQuery.ajax({
-			type: "POST",
-			url: dir + '/php/mailer.php',
-			data: dataString,
-			dataType: "json",
-			success: function (response) {
-				jQuery('body').find('.system-site-wrap').remove();
-				if (response.type == 'error') {
-					jQuery.sticky(response.message, {classList: 'important', speed: 200, autoclose: 500000});
-				} else {
-					jQuery.sticky(response.message, {classList: 'success', speed: 200, autoclose: 500000});
-				}
-			}
-		});
-		return false;
-	});
+	// 	jQuery.ajax({
+	// 		type: "POST",
+	// 		url: dir + '/php/mailer.php',
+	// 		data: dataString,
+	// 		dataType: "json",
+	// 		success: function (response) {
+	// 			jQuery('body').find('.system-site-wrap').remove();
+	// 			if (response.type == 'error') {
+	// 				jQuery.sticky(response.message, {classList: 'important', speed: 200, autoclose: 500000});
+	// 			} else {
+	// 				jQuery.sticky(response.message, {classList: 'success', speed: 200, autoclose: 500000});
+	// 			}
+	// 		}
+	// 	});
+	// 	return false;
+	// });
 	
 	/* -------------------------------------
 			COLLAPSE MENU SMALL DEVICES
