@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Kontakt</title>
+	<title>Über uns</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
@@ -55,50 +55,6 @@
     </script>
 </head>
 <body>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const form = document.getElementById('contact-form');
-			form.addEventListener('submit', function(event) {
-				event.preventDefault(); // Prevent the default form submission
-	
-				// Gather form data
-				const formData = new FormData(form);
-				const formObject = Object.fromEntries(formData.entries());
-	
-				// Send the form data using Fetch API
-				fetch(form.action, {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-						'Accept': 'application/json',
-					},
-					body: JSON.stringify(formObject),
-				})
-				.then(response => {
-					if (response.ok) {
-						// Display success message
-						form.reset();
-						displayMessage('Thank you for your message! We will get back to you soon.', 'success');
-					} else {
-						// Display error message
-						displayMessage('Oops! There was a problem submitting your form. Please try again later.', 'error');
-					}
-				})
-				.catch(error => {
-					// Display error message for network errors
-					displayMessage('There was an error: ' + error.message, 'error');
-				});
-			});
-	
-			// Function to display feedback messages to the user
-			function displayMessage(message, type) {
-				const messageDiv = document.getElementById('form-response');
-				messageDiv.innerText = message;
-				messageDiv.className = type; // Apply success or error class
-			}
-		});
-	</script>
-
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -198,7 +154,6 @@
         <!--************************************
 				Header End
 		*************************************-->
-		
 		<!--************************************
 				Banner Start
 		*************************************-->
@@ -210,11 +165,11 @@
 				<div class="row">
 					<div class="tg-banner-content tg-haslayout">
 						<div class="tg-pagetitle">
-								<h1>Kontakt</h1>
+							<h1>Blog</h1>
 						</div>
 						<ol class="tg-breadcrumb">
 							<li><a href="index.html">Home</a></li>
-							<li class="active">Kontakt</li>
+							<li class="active">Blog</li>
 						</ol>
 					</div>
 				</div>
@@ -226,107 +181,68 @@
 		<!--************************************
 				Main Start
 		*************************************-->
-		<main id="tg-main" class="tg-main tg-paddingbottom-zero tg-haslayout">
-			<section class="tg-main-section tg-paddingbottom-zero tg-haslayout">
+		<main id="tg-main" class="tg-main tg-haslayout">
+			<!--************************************
+					Blog Start
+			*************************************-->
+			<section class="tg-sectionspace tg-haslayout">
 				<div class="container">
-					<div class="tg-section-name">
-						<h2>Kontakt</h2>
-					</div>
-					<div class="col-sm-11 col-xs-11 pull-right">
-						<div class="row">
-							<div class="tg-contactus tg-haslayout">
-								<div class="row">
-									<div class="col-md-5 col-sm-12 col-xs-12">
-										<div class="tg-contactinfobox">
-											<div class="tg-section-heading"><h2>Schreib uns doch gerne!</h2></div>
-											<div class="tg-description">
-												<p>Wir sind per Mail und auf Instagram für dich erreichbar!</p>
-											</div>
-											<ul class="tg-contactinfo">
-												<li>
-													<i class="fa fa-map-marker"></i>
-													<address>Kirschenallee 39, 2120 Wolkersdorf im Weinviertel</address>
-												</li>
-												<li>
-													<i class="fa fa-envelope-o"></i>
-													<a href="mailto:office@higlhaglhugl.at">office@higlhaglhugl.at</a>
-												</li>
-												<li>
-													<i class="fa fa-instagram"></i>
-													<a href="https://www.instagram.com/higl.hagl.hugl/">Higl Hagl Hugl</a>
-												</li>
-												<li>
-													<i class="fa fa-laptop"></i>
-													<a href="www.Higl Hagl Hugl.at">www.higlhaglhugl.at</a>
-												</li>
-											</ul>
+					<div class="row">
+						<div class="col-12">
+							<div id="tg-content" class="tg-content">
+								<article class="tg-post tg-postdetail">
+									<figure>
+										<a><img src="images/blog/sushiweihnachten.jpeg" alt="image description"></a>
+									</figure>
+									<div class="tg-postcontent">
+										<div class="tg-posttitle">
+											<h2><a href="#">Eine Weihnachtsfeier wie sie kein anderer verein kann!</a></h2>
+											<h5>Käptn zur See - 25. Dez. 2024</h5> 
 										</div>
-									</div>
-									
-									<div class="col-md-7 col-sm-12 col-xs-12">
-										<form id="contact-form" action="https://formspree.io/f/moqggyor" method="POST" class="tg-commentform help-form"> 
-											<fieldset>
-												<div class="form-group">
-													<input type="text" required="" placeholder="Name*" class="form-control" name="contact[name]">
-												</div>
-												<div class="form-group">
-													<input type="email" required="" placeholder="Email*" class="form-control" name="email" oninput="this.value = this.value.toLowerCase()">
-												</div>
-												<div class="form-group">
-													<div class="tg-select">
-														<select name="contact[type]">
-															<option value="">Anfrage Auswählen*</option>
-															<option value="Allgemein">Allgemein</option>
-															<option value="Infos">Infos</option>
-															<option value="Pöbelein">Pöbelein</option>
-														</select>
-													</div>
-												</div>
-												<div class="form-group">
-													<textarea required placeholder="Nachricht*" name="contact[message]"></textarea>
-												</div>
-												<div class="form-group">
-													<button type="submit" class="tg-btn submit-now">Senden</button>
-												</div>
-											</fieldset>
-											<div id="form-response" class="tg-form-response"></div>
-										</form>
-									</div>
-									<div id="tg-officeaddressslider" class="tg-officeaddressslider tg-officeaddressnav owl-carousel">
-										<div class="item">
-											<span class="tg-theme-tag">Higl Hagl Hugl</span>
-											<div class="tg-section-heading"><h2>Wien</h2></div>
-											<ul class="tg-contactinfo">
-												<li>
-													<i class="fa fa-map-marker"></i>
-													<address>Wien</address>
-												</li>
-												<li>
-													<i class="fa fa-instagram"></i>
-													<span>Higl Hagl Hugl</span>
-												</li>
-												<li>
-													<i class="fa fa-envelope-o"></i>
-													<span href="mailto:office@higlhaglhugl.at">office@higlhaglhugl.at</span>
-												</li>
-											</ul>
+										<div class="tg-description">
+											<p class="bold">Hallo liebe Higl Hagl Hugl-Freunde und -Anhänger,</p>
+                                            <br>
+                                            <p>Nach einem großartigen Jahr stand als krönender Abschluss die Weihnachtsfeier an. Neben leckeren Essen und zahlreichen Getränken beim Schurlwirt in Pillichsdorf, wurde sich an die schönsten Momente des vergangenen Jahres erinnert. Immerhin konnten wir sportlich auf das erfolgreichste der Vereinsgeschichte zurückblicken.</p>
+                                            <br>
+                                            <p>Abgesehen von der fußballerischen Leistung waren natürlich auch noch etliche lustige Momente im Gedächtnis. Die Rubrik „Aktion der Saison“ hatte mit Chrisi und Lui einen klaren Sieger, die mit ihrem „Tag danach“ nach dem Obersdorf Turnier für Gelächter sorgten. Sie lösen Tuma, die kleine Bachforelle, den Gewinner aus dem Vorjahr ab. Platz 2 ging an Holzmichls „Brunzer“ und Platz 3 an El Panteros „Eigentaufe“.</p>
+                                            <br>
+                                            <p>Auch die Person der Saison war, wie auch letztes Jahr, ziemlich deutlich. Sushi verbrachte ein halbes Jahr, in den letzten paar Wochen sogar bis in die späten Morgenstunden, damit, ein Stickeralbum zu designen und auf alle Wünsche des Vorstandes einzugehen. Selbstverständlich machte ihn das zum Hugler des Jahres. Der Käptn zur See, der sich durch 100% Teilnahmequote 2023, sowie der Erstellung dieser Website zum Vorjahressieger kürte, überreichte Sushi die Krone und vom Vorstand bekam er unter tosendem Applaus den Pokal überreicht.</p>
+                                            <br>
+                                            <p>Platz 2 ging an Danger, der 100% Teilnahmequote 2024 erreichte. Platz 3 errang El Pantero, der damit die 2. Medaille an diesem Tag bekam. Er hat als Kantineur maßgeblichen Anteil an Punsch- und Cocktailstand!</p>
+                                            <br>
+                                            <p>Danach fand die Übergabe des Higl Hagl Hugl Stickeralbums als Geschenk großen Anklang bei allen Mitgliedern. Zum Abschluss gab es noch eine Versteigerung eines mittlerweile berühmten Bildes vom Saftla, welches für 25€ an Holzmichl ging!</p>
+                                            <br>
+                                            <p>Alles in allem ein völlig gelungener Jahresabschluss, der Lust auf das nächste Jahr macht! Wir sehen uns 2025!</p>
+                                            <br>
+											<p>Manuel - Lauren [10]</p>
+											<p>Gründungsmitglied</p>
+											<p>Higl Hagl Hugl</p>
+                                            <br>
 										</div>
+										<a class="tg-btn" href="index.html">Zurück zu Home</a>
+										<a class="tg-btn" href="bloggrid.html">Zurück zum Blog</a>
 									</div>
-								</div>
+								</article>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="tg-mapcontent" class="tg-mapcontent owl-carousel">
-					<div class="item">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281336.65243299404!2d16.214840604190954!3d48.2201153413883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079e5136ca9f%3A0xfdc2e58a51a25b46!2sWien!5e1!3m2!1sde!2sat!4v1735844916075!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
 			</section>
+			
+			
+			<!--************************************
+					Blog End
+			*************************************-->
+			
+
+			
+			
+			
 		</main>
 		<!--************************************
 				Main End
 		*************************************-->
-                <!--************************************
+	        <!--************************************
 				Footer Start
 		*************************************-->
         <footer id="tg-footer" class="tg-footer tg-haslayout">
@@ -383,6 +299,9 @@
 				Footer End
 		*************************************-->
 	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
 	<script src="js/vendor/jquery-library.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/customScrollbar.min.js"></script>
