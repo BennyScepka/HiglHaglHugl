@@ -321,6 +321,8 @@ iframe {
 }
 /* Justifies the text for a clean block format */
 .tg-description p {
+	font-weight: normal;
+	font-family: inherit;
     text-align: justify; /* Aligns text to be justified */
     margin: 0 auto; /* Centers text block */
     max-width: 90%; /* Optional: limits text width to make it easier to read */
