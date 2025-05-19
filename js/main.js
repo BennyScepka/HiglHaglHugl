@@ -56,7 +56,7 @@ $(document).ready(function() {
 	------------------------------------------*/
 	function matchCounter(){
 		// 30.05.2025, 14:30 Uhr (Monat 4, da JS Monate 0-basiert zählt)
-		var launch = new Date(2025, 4, 30, 14, 30, 0);
+		var launch = new Date(2025, 4, 31, 14, 30, 0);
 		var days = $('.tg-days');
 		var hours = $('.tg-hours');
 		var minutes = $('.tg-minutes');
