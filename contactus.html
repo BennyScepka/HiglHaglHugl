@@ -31,41 +31,18 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/verifyPassword.js"></script>
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-	<script>
-        // JavaScript Funktion zur Passwortüberprüfung
-        function verifyPassword(event) {
-            event.preventDefault(); // Verhindert das Standardverhalten des Links
-
-            // Standardpasswort
-            var correctPassword = "12345678!";
-
-            // Passwortabfrage
-            var userPassword = prompt("Bitte geben Sie das Passwort ein, um die Fotos zu sehen:");
-
-            // Überprüfen des eingegebenen Passworts
-            if (userPassword === correctPassword) {
-                // Wenn das Passwort korrekt ist, weiterleiten
-                window.open(event.currentTarget.href, '_blank');
-            } else {
-                // Wenn das Passwort falsch ist, Fehlermeldung anzeigen
-                alert("Falsches Passwort. Zugriff verweigert.");
-            }
-        }
-    </script>
 </head>
 <body>
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const form = document.getElementById('contact-form');
 			form.addEventListener('submit', function(event) {
-				event.preventDefault(); // Prevent the default form submission
-	
-				// Gather form data
+				event.preventDefault();
 				const formData = new FormData(form);
 				const formObject = Object.fromEntries(formData.entries());
 	
-				// Send the form data using Fetch API
 				fetch(form.action, {
 					method: 'POST',
 					headers: {
@@ -76,25 +53,21 @@
 				})
 				.then(response => {
 					if (response.ok) {
-						// Display success message
 						form.reset();
 						displayMessage('Thank you for your message! We will get back to you soon.', 'success');
 					} else {
-						// Display error message
 						displayMessage('Oops! There was a problem submitting your form. Please try again later.', 'error');
 					}
 				})
 				.catch(error => {
-					// Display error message for network errors
 					displayMessage('There was an error: ' + error.message, 'error');
 				});
 			});
 	
-			// Function to display feedback messages to the user
 			function displayMessage(message, type) {
 				const messageDiv = document.getElementById('form-response');
 				messageDiv.innerText = message;
-				messageDiv.className = type; // Apply success or error class
+				messageDiv.className = type;
 			}
 		});
 	</script>
@@ -243,10 +216,10 @@
 												<p>Wir sind per Mail und auf Instagram für dich erreichbar!</p>
 											</div>
 											<ul class="tg-contactinfo">
-												<li>
+												<!--<li>
 													<i class="fa fa-map-marker"></i>
 													<address>Kirschenallee 39, 2120 Wolkersdorf im Weinviertel</address>
-												</li>
+												</li> -->
 												<li>
 													<i class="fa fa-envelope-o"></i>
 													<a href="mailto:office@higlhaglhugl.at">office@higlhaglhugl.at</a>

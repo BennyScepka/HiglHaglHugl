@@ -31,28 +31,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/verifyPassword.js"></script>
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-	<script>
-        // JavaScript Funktion zur Passwortüberprüfung
-        function verifyPassword(event) {
-            event.preventDefault(); // Verhindert das Standardverhalten des Links
-
-            // Standardpasswort
-            var correctPassword = "12345678!";
-
-            // Passwortabfrage
-            var userPassword = prompt("Bitte geben Sie das Passwort ein, um die Fotos zu sehen:");
-
-            // Überprüfen des eingegebenen Passworts
-            if (userPassword === correctPassword) {
-                // Wenn das Passwort korrekt ist, weiterleiten
-                window.open(event.currentTarget.href, '_blank');
-            } else {
-                // Wenn das Passwort falsch ist, Fehlermeldung anzeigen
-                alert("Falsches Passwort. Zugriff verweigert.");
-            }
-        }
-    </script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -228,346 +208,88 @@
 								</div>
 							</div>
 						<!-- Row for Gesammelte Fangesänge -->
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2>Gesammelte Fangesänge</h2></div>
-									<div class="tg-description text-center">
-										<p>De de de de de de de de Higl Hagl Hugl <br>
-										De de de de de de de de Ich hab ne lange Nudel (wiederholen & schneller werden)</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Diesel ist nicht billig – ich bin heute willig <br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Bäume gibt es viele – ich hab 5 Promille<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Jedes Kind liebt Fritten – ich mag Riesentitten<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Fische die ham Kiemen – ich nen langen Riemen<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Kleine Kinder winken – Meine Eier stinken<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Das Kondom gerissen – Heide ist beschissen<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Beeren Brom und Heidl – Lutsch an meinem Beidl<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Wir können zwar nicht kicken – aber haben Bock zu ficken<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Käsetoast mit Schinken – Muschiwasser trinken<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Ich hab nen kleinen Penis – mein bester Freund heißt Denis<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Streichel mir die Wampe – Nimm ihn in den Mund du Schlampe<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Habicht, Specht und Geier – Leck mir meine Eier<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Der letzte Rausch echt ranzig – 14 Euro 20<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Navdeep ist ein Inder – wir buddan eure Kinder<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Wir saufen alle nieder – und singen unsre Lieder<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Banane Apfel Birne – wir ham kleine Hirne<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Geliebt hab ich noch nie – dann kam Emili<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Von Wien bis nach Brüssel – Buchi mit dem langen Rüssel<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Niklas liebt Anal – Tief in den Kanal<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Bertls lange Haare – vom Ansatz bis zur Wade<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>In der Kirche beten – dicke Möpse kneten<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Schaut auf Pussybär – hat Geschlechtsverkehr<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Michi ist sehr schüchtern – aber niemals nüchtern<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Chrisi ist nicht groß – sein Schwanz jedoch famos<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Butterbrot mit Sahne – Lui fickt die Blade<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Wer sitzt auf dem Thron? – es ist der Bierbaron<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Scepka war Schulsprecher – jetzt leert er die Becher <br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Ante ist vom Ostblock – und hat einen fat Cock<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Er hat nicht viel vertragen – Basti Leberschaden<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tg-contentbox">
-									<div class="tg-section-heading"><h2> </h2></div>
-									<div class="tg-description text-center">
-										<p>Tuma nicht sehr helle - die kleine Bachforelle<br>
-										Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
-									</div>
-								</div>
-							</div>
+<div class="lieder-container" style="width:100%; display:flex; flex-direction:column; align-items:center;">
+  <div class="row" style="width:100%; max-width:600px;">
+    <div class="col-md-12">
+      <div class="tg-contentbox">
+        <div class="tg-section-heading"><h2>Gesammelte Fangesänge – Allgemein (A-Z)</h2></div>
+        <hr style="border: none; border-top: 3px solid #00bcd4; margin: 16px 0 32px 0; width: 100%;">
+        <div class="lieder-inner" style="max-width:500px; margin:0 auto; text-align:left;">
+          <p>Banane Apfel Birne – wir ham kleine Hirne<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Bäume gibt es viele – ich hab 5 Promille<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Beeren Brom und Heidl – Lutsch an meinem Beidl<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Das Kondom gerissen – Heide ist beschissen<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>De de de de de de de de Higl Hagl Hugl <br>De de de de de de de de Ich hab ne lange Nudel (wiederholen & schneller werden)</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Der letzte Rausch echt ranzig – 14 Euro 20<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Diesel ist nicht billig – ich bin heute willig <br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Fische die ham Kiemen – ich nen langen Riemen<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Habicht, Specht und Geier – Leck mir meine Eier<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Ich hab nen kleinen Penis – mein bester Freund heißt Denis<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Jedes Kind liebt Fritten – ich mag Riesentitten<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Käsetoast mit Schinken – Muschiwasser trinken<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Kleine Kinder winken – Meine Eier stinken<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Navdeep ist ein Inder – wir buddan eure Kinder<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Streichel mir die Wampe – Nimm ihn in den Mund du Schlampe<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Wir können zwar nicht kicken – aber haben Bock zu ficken<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Wir saufen alle nieder – und singen unsre Lieder<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="width:100%; max-width:600px;">
+    <div class="col-md-12">
+      <div class="tg-contentbox">
+        <div class="tg-section-heading"><h2>Gesammelte Fangesänge – Spieler (A-Z)</h2></div>
+        <hr style="border: none; border-top: 3px solid #e83e8c; margin: 16px 0 32px 0; width: 100%;">
+        <div class="lieder-inner" style="max-width:500px; margin:0 auto; text-align:left;">
+          <p>Ante ist vom Ostblock – und hat einen fat Cock<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Bertls lange Haare – vom Ansatz bis zur Wade<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Butterbrot mit Sahne – Lui fickt die Blade<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Chrisi ist nicht groß – sein Schwanz jedoch famos<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Er hat nicht viel vertragen – Basti Leberschaden<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Geliebt hab ich noch nie – dann kam Emili<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>In der Kirche beten – dicke Möpse kneten<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Michi ist sehr schüchtern – aber niemals nüchtern<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Niklas liebt Anal – Tief in den Kanal<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Scepka war Schulsprecher – jetzt leert er die Becher <br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Schaut auf Pussybär – hat Geschlechtsverkehr<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Tuma nicht sehr helle - die kleine Bachforelle<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Von Wien bis nach Brüssel – Buchi mit dem langen Rüssel<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+          <hr style="border: none; border-top: 2px solid #bbb; margin: 24px 0; width: 100%;">
+          <p>Wer sitzt auf dem Thron? – es ist der Bierbaron<br>Higl Hagl Hugl - mein Verein, Hey Hey Hey Hey</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 						</div>
 					</div>
 				</div>
@@ -658,6 +380,24 @@
 	<script src="js/countTo.js"></script>
 	<script src="js/appear.js"></script>
 	<script src="js/main.js"></script>
+	<style>
+.lieder-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.lieder-inner {
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+@media (max-width: 700px) {
+    .lieder-inner {
+        max-width: 98vw;
+    }
+}
+</style>
 </body>
 
 </html>

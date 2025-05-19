@@ -1,4 +1,4 @@
-	/* -------------------------------------
+/* -------------------------------------
 			AGE CHECK LIEDERLISTE
 	-------------------------------------- */
 	document.addEventListener('DOMContentLoaded', function () {
@@ -17,9 +17,9 @@
 				modal.style.display = 'none'; // Close modal if age is valid
 			} else {
 				message.textContent = 'Du musst 18 Jahre oder älter sein für diese Seite';
-                setTimeout(function () {
-                    window.location.href = 'index.html';
-                }, 3000);
+				setTimeout(function () {
+					window.location.href = 'index.html';
+				}, 3000);
 			}
 		});
 	
