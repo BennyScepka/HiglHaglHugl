@@ -1,9 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
-<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang="zxx"> <![endif]-->
-<!--[if IE 8]>			<html class="no-js lt-ie9" lang="zxx"> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
-
+<html class="no-js" lang="zxx">
 
 <head>
 	<meta charset="utf-8">
@@ -31,28 +27,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/verifyPassword.js"></script>
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-	<script>
-        // JavaScript Funktion zur Passwortüberprüfung
-        function verifyPassword(event) {
-            event.preventDefault(); // Verhindert das Standardverhalten des Links
-
-            // Standardpasswort
-            var correctPassword = "12345678!";
-
-            // Passwortabfrage
-            var userPassword = prompt("Bitte geben Sie das Passwort ein, um die Fotos zu sehen:");
-
-            // Überprüfen des eingegebenen Passworts
-            if (userPassword === correctPassword) {
-                // Wenn das Passwort korrekt ist, weiterleiten
-                window.open(event.currentTarget.href, '_blank');
-            } else {
-                // Wenn das Passwort falsch ist, Fehlermeldung anzeigen
-                alert("Falsches Passwort. Zugriff verweigert.");
-            }
-        }
-    </script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -211,11 +187,11 @@
 															<p><b>Pressesprecher</b> <br></p>
 															<p>“Wir müssen gewinnen, alles andere ist primär.” (Hans Krankl)</p>
 														</div>
-														<ul class="tg-socialicons">
+														<!-- <ul class="tg-socialicons">
 															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 															<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 															
-														</ul>
+														</ul> -->
 													</figcaption>
 												<!--</div>-->
 											</figure>
@@ -233,11 +209,11 @@
 														<p><b>Kantineur</b> <br></p>
 														<p>„Unser letzter Wille, noch mehr Promille!“</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -252,13 +228,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Chefscout</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Ich scoute nicht nur Talente, sondern auch die besten Happy Hours!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -275,11 +251,11 @@
 														<p><b>Diversitätsbeauftragter, Vereins-DJ</b> <br></p>
 														<p>"Meine geistig moralischen Mechanismen sind mysteriös und komplex"</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -295,13 +271,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Diversitätsbeauftragter Stv.</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Ob Bier, Spritzer oder Gin – bei uns ist jeder Drink willkommen!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -317,13 +293,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Diversitätsbeauftragter Stv. Stv.</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Im Strafraum wie an der Bar: Hauptsache voll!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -341,11 +317,11 @@
 														<p><b>Ernährungsberaterin</b> <br></p>
 														<p>Natürlich ernähren wir uns bewusst. Bewusstlos kann man nicht trinken!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -361,13 +337,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Fotograf</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Ich schieße mehr Fotos als Tore – und trinke mehr Shots als beides!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -383,13 +359,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Beschwerdemanagerin</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Wer meckert, bekommt einen Kurzen aufs Haus!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -405,13 +381,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Mentalcoach</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>In Vino Veritas!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -427,13 +403,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Brandschutzbeauftragter</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Vorsicht heiß! Aber mein Bier bleibt immer eiskalt.</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -451,11 +427,11 @@
 														<p><b>Brandschutzbeauftragter Stv.</b> <br></p>
 														<p>"C2H6O - Die Formel für Spaß und Vergessen!"</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -471,13 +447,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Brandschutzbeauftragter Stv. Stv.</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>														
+														<p>Ich lösche nicht nur Brände, sondern auch den Durst!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -493,13 +469,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Fanbeauftragte</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Mit jedem Tor steigt der Pegel – und die Stimmung!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -517,11 +493,11 @@
 														<p><b>Dolmetscherin</b> <br></p>
 														<p>"Auf den Alkohol - die Ursache und die Lösung aller Probleme!"</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -538,11 +514,11 @@
 														<p><b>Jugendkoordinator</b> <br></p>
 														<p>Rettet die Bäume, esst mehr Biber!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -560,11 +536,11 @@
 														<p><b>Ersatztormann Tormanntrainer Stv.</b> <br></p>
 														<p>"Letzter Rausch echt ranzig - 14,20€"</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -580,13 +556,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Ostblockbeauftragter</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Wodka verbindet – auf und neben dem Platz!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -604,11 +580,11 @@
 														<p><b>Vereinseigener Förster</b> <br></p>
 														<p>"Eier, wir brauchen Eier! Und Bier, Bier auch!"</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -623,13 +599,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Integrationsbeauftragte</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Bei uns sind alle willkommen – Hauptsache, das Glas ist voll!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -647,11 +623,11 @@
 														<p><b>Mannschaftschirurg</b> <br></p>
 														<p>ihr vü Spaß - und dir vü glick</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -667,13 +643,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Platzwart</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Mein Rasen ist grüner als dein Bier – aber beides wird gepflegt!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -689,13 +665,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Schriftführerin</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Ich schreibe schneller als du trinken kannst!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -710,13 +686,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Athletiktrainer</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Mein Trainingsplan: 3 Sprints zum Kühlschrank, 1 Kopfball aufs Fass!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -731,13 +707,13 @@
 													</div>
 													<div class="tg-description">
 														<p><b>Scout in Japan</b> <br></p>
-														<p>Hier könnte Ihre Werbung stehen!</p>
+														<p>Sake, Bier oder Spritzer – Hauptsache international!</p>
 													</div>
-													<ul class="tg-socialicons">
+													<!-- <ul class="tg-socialicons">
 														<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 														<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														
-													</ul>
+													</ul> -->
 												</figcaption>
 											</figure>
 										</div>
@@ -790,7 +766,7 @@
 										<div class="tg-contentbox">
 											<div class="tg-section-heading"><h2>Vereinsverpflichtung von A bis Z</h2></div>
 											<div class="tg-description">
-												<p>Entstanden aus einer motivierten Truppe im EllaLingens Gymnasium in 1210 Wien, führt sich seit 2020 die Tradition fort. Mit mittlerweile über 30 Mitglieder, bestreiten die Higl Hagl Hugl ihre Tuniere sowohl Fußballerisch als auch an der Bar auf höchtem Level.</p>
+												<p>Entstanden aus einer motivierten Truppe im EllaLingens Gymnasium in 1210 Wien, führt sich seit 2020 die Tradition fort. Mit mittlerweile über 30 Mitglieder, bestreiten die Higl Hagl Hugl ihre Tuniere sowohl Fußballerisch als auch an der Bar auf höchstem Level.</p>
 											</div>
 										</div>
 									</div>

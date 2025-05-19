@@ -30,29 +30,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <script src="js/verifyPassword.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script>
-        // JavaScript Funktion zur Passwortüberprüfung
-        function verifyPassword(event) {
-            event.preventDefault(); // Verhindert das Standardverhalten des Links
-
-            // Standardpasswort
-            var correctPassword = "12345678!";
-
-            // Passwortabfrage
-            var userPassword = prompt("Bitte geben Sie das Passwort ein, um die Fotos zu sehen:");
-
-            // Überprüfen des eingegebenen Passworts
-            if (userPassword === correctPassword) {
-                // Wenn das Passwort korrekt ist, weiterleiten
-                window.open(event.currentTarget.href, '_blank');
-            } else {
-                // Wenn das Passwort falsch ist, Fehlermeldung anzeigen
-                alert("Falsches Passwort. Zugriff verweigert.");
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -282,12 +261,35 @@
                         <div class="row">
                             <div class="tg-blogpost">
                                 <div class="row">
-                                    <!-- Erstes Element -->
+                                    <!-- Neuer Post: In Gedenken an Maxi -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <article class="tg-post equal-height">
+                                            <figure class="tg-postimg">
+                                                <a href="blog_maxi.html">
+                                                    <img src="images/max_parte.jpg" alt="In Gedenken an Maxi" style="width: 100%; height: 250px; object-fit: cover; object-position: 50% 60%; display: block; margin: 0 auto;">
+                                                </a>
+                                                <figcaption>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="#">Lauren</a></li>
+                                                        <li><a href="#">Parte</a></li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="tg-posttitle">
+                                                <h3><a href="blog_maxi.html">In Gedenken an Maxi, <br> Higl Hagl Hugl nimmt Abschied	</a></h3>
+                                            </div>
+                                            <div class="tg-description">
+                                                <p>Nach einer Woche der Trauer ist es Zeit Abschied von einem Freund der Higl Hagl Hugl Familie zu nehmen, der viel zu früh aus dem Leben gerissen wurde. Es schießt uns bei all dem Spaß und Feiern blitzartig in die Realität zurück und man sieht wie schnell das alles ein Ende ...</p>
+                                            </div>
+                                            <a class="tg-btn left-aligned-btn" href="blog_maxi.html">Mehr Lesen</a>
+                                        </article>
+                                    </div>
+                                    <!-- Weihnachtsfeier Post (bleibt, aber auf zweiter Position) -->
                                     <div class="col-sm-6 col-xs-12">
                                         <article class="tg-post equal-height">
                                             <figure class="tg-postimg">
                                                 <a href="blog_weihnachtsfeier.html">
-                                                    <img src="images/blog/sushiweihnachten.jpeg" alt="image description">
+                                                    <img src="images/blog/sushiweihnachten.jpeg" alt="Weihnachtsfeier Sushi">
                                                 </a>
                                                 <figcaption>
                                                     <ul class="tg-postmetadata">
@@ -297,35 +299,12 @@
                                                 </figcaption>
                                             </figure>
                                             <div class="tg-posttitle">
-                                                <h3><a href="blog_hagenberg_ungeschlagen.html">Oh Weihnachtsfeier! <br> Oh Weihnachtsfeier!</a></h3>
+                                                <h3><a href="blog_weihnachtsfeier.html">Oh Weihnachtsfeier! <br> Oh Weihnachtsfeier!</a></h3>
                                             </div>
                                             <div class="tg-description">
-                                                <p>Nach einem großartigen Jahr stand als krönender Abschluss die Weihnachtsfeier an. Neben leckeren Essen und zahlreichen Getränken beim Schurlwirt in Pillichsdorf, wurde sich an die schönsten Momente des vergangenen Jahres erinnert...</p>
+                                                <p>Nach einem großartigen Jahr stand als krönender Abschluss die Weihnachtsfeier an. Neben leckerem Essen und zahlreichen Getränken beim Schurlwirt in Pillichsdorf, wurde sich an die schönsten Momente des vergangenen Jahres erinnert...</p>
                                             </div>
-                                            <a class="tg-btn left-aligned-btn" href="">Mehr Lesen</a>
-                                        </article>
-                                    </div>
-                                    <!-- Zweites Element -->
-                                    <div class="col-sm-6 col-xs-12">
-                                        <article class="tg-post equal-height">
-                                            <figure class="tg-postimg">
-                                                <a href="blog_hagenberg_ungeschlagen.html">
-                                                    <img src="images/blog/hagenberg_2024_dritter.jpg" alt="image description">
-                                                </a>
-                                                <figcaption>
-                                                    <ul class="tg-postmetadata">
-                                                        <li><a href="#">Lauren</a></li>
-                                                        <li><a href="#">Fußball</a></li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="tg-posttitle">
-                                                <h3><a href="blog_hagenberg_ungeschlagen.html">Ungeschlagen, Ungeschlagen! <br> Hey Hey!</a></h3>
-                                            </div>
-                                            <div class="tg-description">
-                                                <p>Spiele verlieren ist nur etwas für die Verlierer! Am letzten Wochenende wurde die Reise von Higl Hagl Hugl zum internationalen Kleinfeldfußballtunier in Hagenberg mit einer weiteren Topplatzierung belohnt! HigHaglHugl Allez!</p>
-                                            </div>
-                                            <a class="tg-btn left-aligned-btn" href="">Mehr Lesen</a>
+                                            <a class="tg-btn left-aligned-btn" href="blog_weihnachtsfeier.html">Mehr Lesen</a>
                                         </article>
                                     </div>
                                 </div>
@@ -358,11 +337,11 @@
                                 <div class="col-md-8 col-sm-8 col-xs-12">
                                     <div class="tg-contentbox">
                                         <div class="tg-section-heading">
-                                            <h2>Higl Hagl Hugl <span>goes</span> Kleinfeldturnier</h2>
+                                            <h2>Higl Hagl Hugl <span>goes</span> Higl Hagl Hugl Cocktailstand</h2>
                                         </div>
                                         <div class="tg-description">
-                                            <p>KLEINFELDFUSSBALL-TURNIER (5 + 1)</p>
-                                            <p>Wir geben bekannt wann wir das nächste Mal im Einsatz sein werden! Bis dahin:</p>
+                                            <p>Higl Hagl Hugl veranstaltet am 30.05.2025 ab 14:30 einen Cocktailstand beim SCU Obersdorf/Pillichsdorf und lädt alle Freunde, Fans und Unterstützer herzlich ein, gemeinsam mit uns einen unvergesslichen Abend zu verbringen! Genießt erfrischende Cocktails, gute Stimmung und feiert mit uns in geselliger Runde. Wir freuen uns auf euer Kommen – Higl Hagl Hugl Allez!</p>
+                                            <p>SCU Obersdorf/Pillichsdorf am 30.05.2025 ab 14:30</p>
                                             <p>Higl Hagl Hugl Allez!</p>
                                         
                                         </div>

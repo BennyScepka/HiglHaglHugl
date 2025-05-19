@@ -6,39 +6,6 @@ $(document).ready(function() {
 	
 	var loader_html = '<div class="system-site-wrap"><div class="system-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>';
 	
-	/* ---------------------------------------
-	 Ajax Code for Contact Form
-	 --------------------------------------- */
-	// jQuery(document).on('click', '.submit-now', function (e) {
-	// 	e.preventDefault();
-	// 	var _this = jQuery(this);
-	// 	jQuery('body').append(loader_html);
-	// 	var serialize_data = _this.parents('.help-form').serialize();
-	// 	var dataString = serialize_data;
-		
-	// 	var path = document.location
-	// 	var loc = window.location;
-	// 	var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/'));
-	// 	var dir = loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-		
-	// 	jQuery.ajax({
-	// 		type: "POST",
-	// 		url: dir + '/php/mailer.php',
-	// 		data: dataString,
-	// 		dataType: "json",
-	// 		success: function (response) {
-	// 			jQuery('body').find('.system-site-wrap').remove();
-	// 			if (response.type == 'error') {
-	// 				jQuery.sticky(response.message, {classList: 'important', speed: 200, autoclose: 500000});
-	// 			} else {
-	// 				jQuery.sticky(response.message, {classList: 'success', speed: 200, autoclose: 500000});
-	// 			}
-	// 		}
-	// 	});
-	// 	return false;
-	// });
-
-	
 	/* -------------------------------------
 			COLLAPSE MENU SMALL DEVICES
 	-------------------------------------- */
@@ -88,7 +55,8 @@ $(document).ready(function() {
 			MATCH COUNTER
 	------------------------------------------*/
 	function matchCounter(){
-		var launch = new Date(2024, 5, 29, 12, 0, 0);
+		// 30.05.2025, 14:30 Uhr (Monat 4, da JS Monate 0-basiert zählt)
+		var launch = new Date(2025, 4, 30, 14, 30, 0);
 		var days = $('.tg-days');
 		var hours = $('.tg-hours');
 		var minutes = $('.tg-minutes');
@@ -105,15 +73,15 @@ $(document).ready(function() {
 			else{
 				var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
 				var d = Math.floor(s/86400);
-				days.html('<h3>'+d+'</h3><h4>Day'+(d>1?'s':''),'</h4>');
+				days.html('<h3>'+d+'</h3><h4>Day'+(d!==1?'s':'')+'</h4>');
 				s -= d*86400;
 				var h = Math.floor(s/3600);
-				hours.html('<h3>'+h+'</h3><h4>Hour'+(h>1?'s':''),'</h4>');
+				hours.html('<h3>'+h+'</h3><h4>Hour'+(h!==1?'s':'')+'</h4>');
 				s -= h*3600;
 				var m = Math.floor(s/60);
-				minutes.html('<h3>'+m+'</h3><h4>Minute'+(m>1?'s':''),'</h4>');
+				minutes.html('<h3>'+m+'</h3><h4>Minute'+(m!==1?'s':'')+'</h4>');
 				s = Math.floor(s-m*60);
-				seconds.html('<h3>'+s+'</h3><h4>Second'+(s>1?'s':''),'</h4>');
+				seconds.html('<h3>'+s+'</h3><h4>Second'+(s!==1?'s':'')+'</h4>');
 				setTimeout(setDate, 1000);
 			}
 		}
@@ -165,8 +133,8 @@ $(document).ready(function() {
 		slidesPerView: 1,
 		nextButton: '.tg-themebtnnext',
 		prevButton: '.tg-themebtnprev',
-		//autoplay: 2000,
 	});
+	
 	/* ---------------------------------------
 			STATISTICS
 	 -------------------------------------- */
@@ -220,6 +188,7 @@ $(document).ready(function() {
 	$("#tg-playerscrollbar, #tg-matchscrollbar").mCustomScrollbar({
 		axis:"y",
 	});
+	
 	/* ---------------------------------------
 			PRETTY PHOTO GALLERY
 	 -------------------------------------- */
@@ -551,6 +520,7 @@ $(document).ready(function() {
 			autoExpandHorizontalScroll:true
 		}
 	});
+	
 	/* ---------------------------------------
 			MEDIA SCROLLBAR RESET
 	-------------------------------------- */
