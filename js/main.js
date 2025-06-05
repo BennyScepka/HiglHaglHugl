@@ -50,13 +50,12 @@ $(document).ready(function() {
 			$('.tg-searchbox').removeClass('in');
 		});
 	}
-	searchToggle();
-	/*------------------------------------------
+	searchToggle();	/*------------------------------------------
 			MATCH COUNTER
 	------------------------------------------*/
 	function matchCounter(){
-		// 30.05.2025, 14:30 Uhr (Monat 4, da JS Monate 0-basiert zählt)
-		var launch = new Date(2025, 4, 30, 14, 30, 0);
+		// 14.06.2025, 12:30 Uhr (Monat 5, da JS Monate 0-basiert zählt)
+		var launch = new Date(2025, 5, 14, 12, 30, 0);
 		var days = $('.tg-days');
 		var hours = $('.tg-hours');
 		var minutes = $('.tg-minutes');
